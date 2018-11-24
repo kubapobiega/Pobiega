@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<title>KUBA POBIEGA PREZENTUJE</title>
+		<meta charset="UTF-8">
+
+		<script> //skrypt uruchamia funkcje losującą aforyzm a następnie wywołuje go jako alert
+		var aforyzmy = ["Tam, gdzie książki palą, niebawem także ludzi palić będą. ~Heinrich Heine", "Pocałunek jest momentem, w którym bez wyrzutów sumienia można przymknąć oczy na wady partnera. ~Lidia Jasińska", "Wszystko jest prostsze, niż myślisz i jednocześnie bardziej skomplikowane, niż sobie wyobrażasz. ~Anonim", "Prawda zbyt łatwo wiedzie nas ku pewności, błąd jest często o wiele bardziej pouczający. ~Hans Hellmut Kirst"];
+         function aforyzm() {
+             var aforyzm = aforyzmy[Math.floor(Math.random() * 4)];
+				alert(aforyzm)
+			}
+
+		</script>
+
+		<script> //skrypt podmienia przywitanie kaczuchy na jakieś komunistyczne głupoty
+         function karolek() {
+			document.getElementById("trescmain").innerHTML = "Marks uważa, że historia wszystkich dotychczasowych społeczeństw jest historią walk klasowych. Od swego zarania ludzkość była podzielona na wyzyskiwaczy i wyzyskiwanych, toczących ze sobą nieustanną walkę. Na obecnym etapie rozwoju społeczeństwa przeciwstawne klasy tworzą burżuazja i proletariusze. Rozwój technologiczny sprawił, że klasowe antagonizmy stają się coraz wyraźniejsze i obejmują praktycznie całe społeczeństwo. Jak zauważa Jarosław Ładosz, walka klas posiada znaczenie określające, podstawowe w stosunku do wszelkich innych sfer życia społecznego ludzi(...) określać ma całokształt życia społecznego, a więc i rozwój działalności produkcyjnej.";
+
+         }
+		</script>
+
+
+
+
+
+   </head>
+   <body>
+	<div class='header'>
+		<h1>Zimą wiele zwierząt umiera z niedożywienia</h1>
+		<h2>Niektóre z nich doświadczają także halucyjnacji</h2>
+		<h3>Nie bądź obojętny!</h3>
+		<h4>Dokarm kaczuchę</h4>
+
+	</div>
+
+	<div class='main'>
+		<img src="http://www.hodowle.eu/Photos/kaczka-pekin_4.jpg" alt="kaczka" title="biedna kaczucha" class="kaczucha";>
+        <p id="trescmain">Witaj towarzyszu! Jestem niepozorną kaczuchą.</p>
+
+
+
+
+
+
+
+
+      </div>
+	<div class='boczny'>
+			<h1> Interakcja człowiek-kaczucha
+			<ul>
+				<li> <button onclick="aforyzm()">Dokarm kaczuchę w zamian za aforyzm</button></li>
+				<li> <button onclick="karolek()">Poproś kaczuchę o zarysowanie poglądów Karola Marksa </button></li>
+
+	</div>
+
+
+
+
+	<div class='stopka'>
+		<ul>
+				<li> "hej kaczko"</li>
+				<li> "nie jesteś dobra kaczko"</li>
+				<li> "nic z ciebie nigdy nie będzie kaczko"</li>
+				<li> "jesteś zupełnie</li>
+				<li> jak </li>
+				<li> twoj ojciec"</li>
+
+		<a href="https://www.youtube.com/watch?v=g9kZrOiqaKk">*quak quak quak*<br></a>
+	</div>
+
+
+
+
+    </body>
+</html>
+{% endblock content %}

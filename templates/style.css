@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+
+p {
+	font-size: 25px;
+}
+
+.header {
+		width: 100%;
+		text-align: center;
+		font-family: "Comic Sans MS", "Comic Sans", cursive;
+		font-size: 20px;
+		background-color: red;
+		
+}
+
+.kaczucha {
+	float: right;
+    width: 30%;
+}
+
+
+.stopka {
+	text-align: center;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-size: 20px;
+	background-color: yellow	;
+	width:100%;
+}
+
+.boczny {
+	text-align: center;
+    height: 700px;
+    width: 20%;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	float:left;
+	background-color:green;
+
+}
+
+.main {
+	width:80%;
+	float:right;
+	height:700px;
+    background-color: brown;
